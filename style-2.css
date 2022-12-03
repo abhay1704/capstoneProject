@@ -1,0 +1,284 @@
+* {
+    text-align: left;
+}
+
+:root {
+    --black: #1E2022;
+    --bgc: #F0F5F9;
+}
+
+body {
+    text-align: center !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center !important;
+    background-color: var(--bgc);
+    text-align: left !important;
+    font-size: 1.2rem;
+}
+
+
+@media only screen and (max-width: 500px) {
+    section.home {
+        flex-direction: column-reverse;
+    }
+
+    section.header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    section.home .image {
+        min-width: 80%;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    section.home .name {
+        min-width: 80%;
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .name h1 {
+        font-size: 2.5rem;
+    }
+
+    .header .more {
+        display: flex;
+        background-color: transparent;
+    }
+
+    .more a {
+        background-color: black !important;
+        color: white !important;
+        font-weight: bold;
+        border-radius: 20%;
+        padding: 10px 20px;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    .header .teamName {
+        font-size: 1.4rem !important;
+    }
+
+}
+
+.more {
+    display: none;
+}
+
+#skills h1#heading {
+    font-size: 3.5em;
+}
+
+.nav .navhome,
+.nav .navabout,
+.nav .navskills {
+    display: flex;
+    background-color: transparent !important;
+}
+
+.header a:hover {
+    background-color: rgb(10, 10, 10) !important;
+    color: #F0F5F9 !important;
+    border-radius: 25%;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.header {
+    height: 40px;
+    box-shadow: 13px -2px 10px 7px rgb(135 142 145);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 5rem;
+    align-items: center;
+    background-color: #C9D6DF;
+}
+
+section.home {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: max-content;
+}
+
+section.home .image {
+    width: 40%;
+}
+
+img {
+    width: 100%;
+}
+
+section.home .name {
+    width: 30%;
+    justify-content: center;
+    margin: auto;
+}
+
+
+h1 {
+    font-size: 2.3rem;
+    letter-spacing: 1.4;
+    line-height: 1.3;
+    font-family: 'Raleway', sans-serif;
+    z-index: 100;
+    position:sticky;
+}
+
+.header a,
+.header a:visited {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #C9D6DF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.teamName {
+    width: 20%;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+
+div.skills {
+    padding: 5rem 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1.2;
+    line-height: 1.3;
+}
+
+.skill {
+    margin: 2rem 4rem;
+    flex: 30%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    /* max-width: 30%; */
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 10% 0;
+}
+
+.skill img {
+    width: 200px;
+    height: 200px;
+    border: solid 2px red;
+    border-radius: 100%;
+    margin: 2rem 0;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+#about {
+    width: 80%;
+    margin: auto;
+}
+
+.dabba {
+    margin: 10vh auto;
+    padding: 5%;
+    text-align: left;
+}
+
+.onMoreClick {
+    display: flex !important;
+    z-index: 100;
+    position: absolute;
+    flex-direction: column;
+    top: 12vh;
+    left: 10vw;
+    width: 80vw;
+    height: fit-content;
+}
+
+.onMoreClick a {
+    width: 100%;
+    margin: 0;
+}
+
+
+.intro {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.intro div {
+    width: 40%;
+}
+
+p {
+    text-align: left !important;
+}
+
+h1 {
+    text-align: left;
+}
+
+blockquote {
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 2.5vh 2.55vw;
+    padding: 2.5vh 2.55vw;
+    border: 3.5px solid grey;
+    border-radius: 3%;
+    box-shadow: 6px 8px 10px 4px #8888ad;
+    font-family: 'Raleway', sans-serif;
+}
+
+blockquote au {
+    text-align: right !important;
+    font-size: 1.4;
+    font-style: italic;
+    margin: auto;
+    display: block;
+}
+
+#abtinnov {
+    /* padding-top: 5rem; */
+}
+
+.intro{
+    padding:5vh 5vw;
+    margin:8vh 5vw;
+}
+
+.innov.body{
+    padding:5vh 10vw;
+}
