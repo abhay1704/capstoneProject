@@ -8,18 +8,23 @@
     padding: 0;
     text-align: center;
     background-color: var(--bgc);
+    overflow:auto;
 }
 
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     section.home {
         flex-direction: column-reverse;
     }
-
+    h1{
+        font-size: 3rem !important;
+    }
+    h2{
+        font-size: 2rem !important;
+    }
     section.header {
         justify-content: space-between;
         align-items: center;
-        padding:1rem;
+        padding: 1rem;
     }
 
     section.home .image {
@@ -41,7 +46,7 @@
         display: flex;
         background-color: transparent;
     }
-   
+
     .more a {
         background-color: black !important;
         color: white !important;
@@ -53,8 +58,9 @@
     .header .nav {
         display: none;
     }
-    .header .teamName{
-        font-size:1.4rem !important;
+
+    .header .teamName {
+        font-size: 1.4rem !important;
     }
 
 }
@@ -62,9 +68,10 @@
 .more {
     display: none;
 }
- #skills h1#heading {
-     font-size: 3.5em;
- }
+
+#skills h1#heading {
+    font-size: 3.5em;
+}
 
 .nav .navhome,
 .nav .navabout,
@@ -82,7 +89,7 @@
 
 .header {
     height: 40px;
-    border: 2px solid black;
+    box-shadow: 13px -2px 10px 7px rgb(135 142 145);
     display: flex;
     justify-content: space-between;
     padding: 0.7rem 5rem;
@@ -166,6 +173,7 @@ p {
     flex-grow: 1;
     /* max-width: 30%; */
     border: 2px solid black;
+    box-sizing: border-box;
     padding: 30px;
     border-radius: 10% 0;
 }
@@ -173,38 +181,42 @@ p {
 .skill img {
     width: 200px;
     height: 200px;
-    border: solid 2px red;
+    border: solid 2px #bfbfbf;
     border-radius: 100%;
     margin: 2rem 0;
 }
 
-h2{
+h2 {
     font-family: 'Raleway', sans-serif;
-    font-size:2.4rem;
+    font-size: 2.4rem;
     margin-bottom: 1rem;
 }
 
-#about{
-    width:80%;
-    margin:auto;
+#about {
+    width: 80%;
+    margin: auto;
 }
 
-.dabba{
-    margin:10vh auto;
+.dabba {
+    margin: 10vh auto;
 }
 
-.onMoreClick{
+.onMoreClick {
     display: flex !important;
     z-index: 100;
     position: absolute;
     flex-direction: column;
-    top:12vh;
-    left:10vw;
-    width:80vw;
-    height:fit-content;
+    top: 12vh;
+    left: 10vw;
+    width: 80vw;
+    height: fit-content;
 }
 
-.onMoreClick   a {
-      width: 100%;
-      margin: 0;
-  }
+.onMoreClick a {
+    width: 100%;
+    margin: 0;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
